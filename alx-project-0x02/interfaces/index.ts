@@ -9,11 +9,6 @@ export interface PostModalProps {
   onSubmit: (data: { title: string; content: string }) => void;
 }
 
-export interface ButtonProps {
-  size: string;
-  shape: string;
-}
-
 export interface PostProps {
   userId: number;
   id?: number;
@@ -31,4 +26,11 @@ export interface UserProps {
     city: string;
     zipcode: string;
   };
+}
+
+export interface ButtonProps {
+  label: string;
+  size?: "small" | "medium" | "large";
+  shape?: "rounded-sm" | "rounded-md" | "rounded-full";
+  onClick?: () => void;
 }
