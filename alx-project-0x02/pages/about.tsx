@@ -9,7 +9,7 @@ export default function AboutPage() {
       <Header />
       <h1 className="text-2xl font-bold mb-6">About Page</h1>
 
-      <div className="space-y-4">
+      <div className="flex space-y-4 space-x-2">
         <Button label="Small & Rounded-sm" size="small" shape="rounded-sm" />
         <Button label="Medium & Rounded-md" size="medium" shape="rounded-md" />
         <Button
